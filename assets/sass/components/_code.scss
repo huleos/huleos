@@ -1,0 +1,31 @@
+//
+// Code (inline and block)
+// --------------------------------------------------
+
+
+// Inline and block code styles
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-monospace;
+}
+
+// Blocks of code
+pre {
+	display: block;
+	font-size: $pre-font-size;
+	line-height: $base-line-height;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: $pre-color;
+  margin: 0 0 1rem;
+  background-color: $pre-bg;
+  border: 1px solid $pre-border-color;
+  padding: 0.5rem;
+  code{
+    font-size: inherit;
+    white-space: pre-wrap;
+    border-radius: 0;
+  }
+}

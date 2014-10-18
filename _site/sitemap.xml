@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://yourdomain.com/welcome-to-jekyll</loc>
+        <lastmod>2014-10-16T17:16:50-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yourdomain.com/404.html</loc>
+        <lastmod>2014-10-16T17:02:53-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yourdomain.com/about/</loc>
+        <lastmod>2014-10-18T11:54:14-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yourdomain.com/</loc>
+        <lastmod>2014-10-18T11:53:49-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://yourdomain.com/assets/css/style.css</loc>
+        <lastmod>2014-10-16T16:48:15-07:00</lastmod>
+    </url>
+</urlset>
