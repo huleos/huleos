@@ -1,2 +1,5 @@
 # Gh pages to custom domain
-Redirect 301 / http://mt-example.com/
+Redirect 301 / http://jcmontenegro.me/
+
+RewriteCond %{HTTP_HOST} ^www\.jcmontenegro\.me [NC]
+RewriteRule ^(.*)$ http://jcmontenegro.me/$1 [L,R=301]
