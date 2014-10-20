@@ -1,0 +1,2 @@
+# Gh pages to custom domain
+Redirect 301 / http://mt-example.com/
