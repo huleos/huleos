@@ -55,6 +55,7 @@
 
 	.navbar-header{
 		float: none;
+		height: remCalc(50)
 	}
 
 	.navbar-toggle{
@@ -64,7 +65,7 @@
 		position: relative;
 		display: block;
 		padding: 0 remCalc(40) 0 remCalc(15);
-		height: remCalc(50);
+		// height: remCalc(50);
 		line-height: remCalc(45);
 		float: right;
 		&:hover{
@@ -74,7 +75,7 @@
 			content: "";
 			position: absolute;
 			top: 50%;
-			margin-top: remCalc(-8);
+			margin-top: remCalc(-5);
 			right: remCalc(15);
 			box-shadow: 0 0px 0 1px $brand-primary, 0 5px 0 1px $brand-primary, 0 10px 0 1px $brand-primary;
 			width: remCalc(16);
