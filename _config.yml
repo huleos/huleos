@@ -1,0 +1,27 @@
+# Site settings
+title: Huleos Framework
+email: 
+description:
+baseurl: ""
+url: "/"
+twitter_username: jekyllrb
+github_username:  jekyll
+huleos_version: v0.1.1
+
+# Build settings
+markdown: kramdown
+
+# Customs
+permalink: none
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/feed.xml"
+        - "/css/main.css"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+sass:
+    sass_dir: assets/sass
+    style: :compressed

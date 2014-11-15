@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+   {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+   <meta name="author" content="/humans.txt">
+   <meta name="viewport" content="width=device-width initial-scale=1" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Favicon -->
+   <link rel="shortcut icon" href="/assets/img/favicon.png">
+   <!-- Styles -->
+   <link rel="stylesheet" href="/assets/css/style.css">
+   <!-- Modernizr -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- Canonical -->
+   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
+	
+	<!-- Header -->
+	<header class="navbar">
+		<section class="navbar-header">
+			<a href="" class="nav-brand">Huleos</a>
+			<a href="#" class="navbar-toggle">Menu</a>
+		</section>
+		
+		<nav class="navbar-collapse">
+			<ul class="right">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/#grid">Grid</a></li>
+				<li><a href="/#forms">Forms</a></li>
+				<li><a href="/#tables">Tables</a></li>
+				<li><a href="/#buttons">Buttons</a></li>
+				<li><a href="/#breadcrumbs">Breadcrumbs</a></li>
+				<li><a href="/#flex-video">Flex Video</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- /Header -->
+
+  <div class="row">
+  	<div class="col md-12">
+  		{{content}}
+  	</div>
+  </div>
+
+	
+	<footer class="footer">
+		<h4>Build something great.</h4>
+		<a href="https://github.com/huleos/huleos.github.io/archive/master.zip" class="btn btn-default">Download {{ site.huleos_version }}</a>
+		<a href="https://github.com/huleos/huleos.github.io" class="btn btn-primary">View on Github</a>
+		<p>Made by <a href="http://jcmontenegro.me/">Julio Cesar Montenegro</a></p>
+	</footer>
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src=\"assets/js/vendor/jquery.min.js\"><\/script>")</script>
+	<!-- Scripts -->
+	<script src="/assets/js/main.js"></script>
+</body>
+</html>
