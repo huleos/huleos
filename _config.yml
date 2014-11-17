@@ -1,11 +1,8 @@
 # Site settings
 title: Huleos Framework
 email: 
-description:
-baseurl: ""
+description: Huleos is a small “mobile first” CSS framework, with useful default styles, and a responsive grid system.
 url: "http://huleos.github.io/huleos"
-twitter_username: jekyllrb
-github_username:  jekyll
 huleos_version: v0.1.1
 
 # Build settings
@@ -17,7 +14,7 @@ sitemap:
     file: "/sitemap.xml"
     exclude:
         - "/feed.xml"
-        - "/css/main.css"
+        - "assets/css/style.css"
     include_posts:
         - "/index.html"
     change_frequency_name: "change_frequency"

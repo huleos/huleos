@@ -8,9 +8,11 @@
    <meta name="viewport" content="width=device-width initial-scale=1" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Favicon -->
-   <link rel="shortcut icon" href="/assets/img/favicon.png">
+   <link rel="shortcut icon" href="{{ "/assets/img/favicon.png" | prepend: site.url }}">
+   
    <!-- Styles -->
-   <link rel="stylesheet" href="/assets/css/style.css">
+   <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.url }}">
+   
    <!-- Modernizr -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<!-- Canonical -->
@@ -21,7 +23,7 @@
 	<!-- Header -->
 	<header class="navbar">
 		<section class="navbar-header">
-			<a href="" class="nav-brand">Huleos</a>
+			<a href="/" class="nav-brand">Huleos</a>
 			<a href="#" class="navbar-toggle">Menu</a>
 		</section>
 		
@@ -49,7 +51,7 @@
 	<footer class="footer">
 		<h4>Build something great.</h4>
 		<a href="https://github.com/huleos/huleos.github.io/archive/master.zip" class="btn btn-default">Download {{ site.huleos_version }}</a>
-		<a href="https://github.com/huleos/huleos.github.io" class="btn btn-primary">View on Github</a>
+		<a href="{{ site.url }}" class="btn btn-primary">View on Github</a>
 		<p>Made by <a href="http://jcmontenegro.me/">Julio Cesar Montenegro</a></p>
 	</footer>
 	
@@ -57,6 +59,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write("<script src=\"assets/js/vendor/jquery.min.js\"><\/script>")</script>
 	<!-- Scripts -->
-	<script src="/assets/js/main.js"></script>
+	<script src="{{ "/assets/js/main.js" | prepend: site.url }}"></script>
+	
 </body>
 </html>
