@@ -3,7 +3,7 @@ title: Huleos Framework
 email: 
 description:
 baseurl: ""
-url: "http://huleos.github.io/"
+url: "http://huleos.github.io/huleos"
 twitter_username: jekyllrb
 github_username:  jekyll
 huleos_version: v0.1.1
