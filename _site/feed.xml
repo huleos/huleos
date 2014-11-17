@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Huleos Framework</title>
-    <description></description>
+    <description>Huleos is a small “mobile first” CSS framework, with useful default styles, and a responsive grid system.</description>
     <link>http://huleos.github.io/huleos/</link>
     <atom:link href="http://huleos.github.io/huleos/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 17 Nov 2014 12:00:24 -0800</pubDate>
-    <lastBuildDate>Mon, 17 Nov 2014 12:00:24 -0800</lastBuildDate>
+    <pubDate>Mon, 17 Nov 2014 12:14:47 -0800</pubDate>
+    <lastBuildDate>Mon, 17 Nov 2014 12:14:47 -0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
   </channel>
