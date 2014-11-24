@@ -3,9 +3,8 @@
 // --------------------------------------------------
 
 // remCal 
-@function remCalc($size) {
-  $remSize: ($size / 16);
-  @return #{$remSize}rem;
+@function remCalc($size, $base-value: 16) {
+  @return ($size / $base-value) + rem;
 }
 
 // Colors
