@@ -5,8 +5,9 @@
 
 .breadcrumbs {
   padding: remCalc(8) remCalc(15);
-  margin-bottom: remCalc(20);
+  margin: 0;
   list-style: none;
+  overflow: hidden;
   > li {
     display: inline-block;
     + li:before {
