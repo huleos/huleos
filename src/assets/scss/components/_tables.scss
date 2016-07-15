@@ -15,7 +15,7 @@ table{
 		>tr{
 			>th{
 				vertical-align: bottom;
-				border-bottom: 1px solid $table-border-color;
+				border-bottom: $table-border;
 				text-align: left;
 			}
 		}
@@ -26,10 +26,10 @@ table{
 		line-height: $base-line-height;
 		overflow: visible;
 		vertical-align: top;
-		border-bottom: 1px solid $table-border-color;
+		border-bottom: $table-border;
 	}
 	td:last-child{
-		border-bottom: 1px solid $table-border-color;
+		border-bottom: $table-border;
 	}
 }
 

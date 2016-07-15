@@ -2,26 +2,22 @@
 @charset "UTF-8";
 
 // Core variables and mixins
-@import "components/variables";
-@import "components/mixins";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/functions";
+@import "utils/normalize";
 
-// Reset
-// Remove Normalize if not required for your project
-@import "normalize";
-
-// Core CSS
-@import "components/scaffolding";
+// Components
+@import "components/global";
 @import "components/type";
-@import "components/code";
 @import "components/grid";
 @import "components/tables";
 @import "components/forms";
 @import "components/buttons";
 @import "components/flex-video";
 @import "components/breadcrumbs";
-
-// Components
 @import "components/navbar";
+
 
 // Custom CSS
 @import "custom";

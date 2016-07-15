@@ -4,8 +4,8 @@
 
 
 .breadcrumbs {
-  padding: remCalc(8) remCalc(15);
-  margin-bottom: remCalc(20);
+  padding: $breadcrumb-padding;
+  margin-bottom: $breadcrumb-margin;
   list-style: none;
   > li {
     display: inline-block;

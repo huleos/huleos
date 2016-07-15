@@ -1,5 +1,4 @@
-/.sass-cache
+.sass-cache
 .DS_Store
-_includes
-_posts
-_site
+npm-debug.log
+node_modules
