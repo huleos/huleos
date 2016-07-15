@@ -368,16 +368,16 @@ textarea {
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   font-size: 100%;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
 
 body {
   padding: 0;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
   color: #333333;
@@ -404,10 +404,8 @@ hr {
   float: right !important; }
 
 .clearfix:before, .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+  content: ' ';
+  display: table; }
 
 .clearfix:after {
   clear: both; }
@@ -488,10 +486,8 @@ code {
   margin-right: auto;
   max-width: 71.25em; }
   .row:before, .row:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */ }
+    content: ' ';
+    display: table; }
   .row:after {
     clear: both; }
   .row .row {
@@ -499,10 +495,8 @@ code {
     margin-left: -0.9375em;
     margin-right: -0.9375em; }
     .row .row:before, .row .row:after {
-      content: " ";
-      /* 1 */
-      display: table;
-      /* 2 */ }
+      content: ' ';
+      display: table; }
     .row .row:after {
       clear: both; }
 
@@ -658,11 +652,11 @@ label {
   font-size: 1rem;
   line-height: 1.5;
   color: #555555;
-  vertical-align: middle;
   background-color: white;
   background-image: none;
   border: 1px solid #ccc;
-  transition: border-color 300ms ease-out; }
+  border-radius: 0;
+  transition: border-color 300ms ease-in-out; }
 
 [type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
   border-color: #555555;
@@ -673,19 +667,21 @@ select {
   width: 100%;
   height: 2.625rem;
   padding: 0.5rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
+  line-height: normal;
   border: 1px solid #ccc;
-  transition: border-color 300ms ease-out; }
+  border-radius: 0; }
+  select:focus {
+    border-color: #555555;
+    outline: none; }
 
-.radio, .checkbox {
+.radio,
+.checkbox {
   position: relative;
   display: block;
-  min-height: 1.25rem;
-  margin-top: 0.625rem;
   margin-bottom: 0.625rem; }
 
-.radio label, .checkbox label {
+.radio label,
+.checkbox label {
   padding-left: 1.25rem;
   margin-bottom: 0;
   font-weight: normal;
