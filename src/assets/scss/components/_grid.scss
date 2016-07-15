@@ -3,22 +3,14 @@
 // --------------------------------------------------
 
 .row {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
   max-width: $row-max-width;
-  *zoom: 1;
 	@include clearfix();
 	.row{
-		width: auto;
+		max-width: none; 
     margin-left: -$grid-gutter;
     margin-right: -$grid-gutter;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: none;
-    *zoom: 1;
     @include clearfix();
 	}
 }
@@ -32,15 +24,13 @@
 }
 
 // Small
-@media #{$breakpoint-small} {
-	@for $i from 1 through $grid-columns {
-	  .sm-#{$i} {
-	  	width: 100% / $grid-columns * $i;
-	  }
-	}
-	.col.sm-center{
-		@include col-center;
-	}
+@for $i from 1 through $grid-columns {
+  .sm-#{$i} {
+  	width: 100% / $grid-columns * $i;
+  }
+}
+.col.sm-center{
+	@include col-center;
 }
 
 // Medium

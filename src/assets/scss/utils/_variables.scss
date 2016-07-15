@@ -71,6 +71,15 @@ $breadcrumb-color:            #ccc !default;
 $breadcrumb-active-color:     $gray-light !default;
 $breadcrumb-separator:        "/" !default;
 
+// 5. Grid
+// ------------------------
+
+$grid-columns: 12;
+$grid-gutter: (1.875em/2);
+$row-max-width: 71.25em;
+$breakpoint-medium: "screen and (min-width: 40em)";
+$breakpoint-large: "screen and (min-width: 64em)";
+
 // Buttons
 // -------------------------
 
@@ -113,19 +122,7 @@ $input-border-focus:          $gray !default;
 $input-color-placeholder:     $gray-light !default;
 $input-height-base:           remCalc(42) !default;
 
-// Grid
-// ------------------------
 
-// grid variables
-$grid-columns: 12;
-$grid-gutter: (1.875em/2);
-$row-max-width: 71.25em;
-
-// breakpoints
-$breakpoint-small: "only screen";
-$breakpoint-small-only: "only screen and (max-width: 40em)";
-$breakpoint-medium: "only screen and (min-width: 40.063em)";
-$breakpoint-large: "only screen and (min-width: 64.063em)";
 
 
 
