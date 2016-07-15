@@ -25,3 +25,7 @@ gulp.task('styles', () => {
 		.pipe(!PRODUCTION ? sourcemaps.write('.') : gutil.noop())
 		.pipe(gulp.dest('./dist/assets/css'));
 });
+
+gulp.task('default', () => {
+	gulp.watch(['./src/assets/scss/**/*.scss'], ['styles']);
+});

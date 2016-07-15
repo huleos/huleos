@@ -8,20 +8,20 @@
 *,
 *:before,
 *:after {
-  @include box-sizing;
+  box-sizing: inherit;
 }
 
 // Body reset
 
 html {
   font-size: $body-font-size;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
   padding: 0;
   font-family: $font-sans-serif;
-  font-size: $base-font-size;
   font-weight: $base-font-weight;
   line-height: $base-line-height;
   color: $text-color;

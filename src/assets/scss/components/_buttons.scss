@@ -16,7 +16,7 @@
 	line-height: 1;
 	padding: remCalc(16) remCalc(32);
 	user-select: none;
-	@include transition(background-color 300ms ease-out);
+	transition: background-color 300ms ease-out;
 
 	&:focus{
 		outline: none;

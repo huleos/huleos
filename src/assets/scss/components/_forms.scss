@@ -4,28 +4,28 @@
 $inputs: '[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea';
 
 .form-group{
-	margin-bottom: remCalc(15);
+	margin-bottom: $form-group-margin-bottom;
 }
 
 label {
 	display: inline-block;
 	max-width: 100%;
-	margin-bottom: remCalc(10);
+	margin-bottom: $form-label-margin-bottom;
 }
 
 #{$inputs} {
 	display: block;
 	width: 100%;
 	height: $input-height-base;
-	padding: remCalc(8) remCalc(12);
+	padding: $input-padding;
 	font-size: $base-font-size;
 	line-height: $base-line-height;
 	color: $input-color;
-	vertical-align: middle;
 	background-color: $input-bg;
 	background-image: none;
-  border: 1px solid $input-border;
-	@include transition(border-color 300ms ease-out);
+  border: $input-border;
+  border-radius: $input-radius;
+	transition: $input-transition;
 }
 
 #{$inputs} {
@@ -39,22 +39,25 @@ select {
 	display: block;
 	width: 100%;
 	height: $input-height-base;
-	padding: remCalc(8) remCalc(12);
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-	border: 1px solid $input-border;
-	@include transition(border-color 300ms ease-out);
+	padding: $input-padding;
+	line-height: normal;
+	border: $input-border;
+	border-radius: $input-radius;
+	&:focus{
+		border-color: $input-border-focus;
+		outline: none;
+	}
 }
 
-.radio, .checkbox {
+.radio,
+.checkbox {
 	position: relative;
 	display: block;
-	min-height: remCalc(20);
-	margin-top: remCalc(10);
-	margin-bottom: remCalc(10);
+	margin-bottom: $form-label-margin-bottom;
 }
 
-.radio label, .checkbox label {
+.radio label,
+.checkbox label {
 	padding-left: remCalc(20);
 	margin-bottom: 0;
 	font-weight: normal;

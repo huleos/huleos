@@ -25,6 +25,7 @@ $hr-border:         		$gray-lighter !default;
 $hr-margin:             remCalc(20) auto !default;
 $body-bg:           		#fff !default;
 $text-color:        		$gray-dark !default;
+$global-radius:         0 !default;
 
 // 2. Typography
 // -------------------------
@@ -80,6 +81,21 @@ $row-max-width: 71.25em;
 $breakpoint-medium: "screen and (min-width: 40em)";
 $breakpoint-large: "screen and (min-width: 64em)";
 
+// 6. Forms
+// ------------------------
+
+$form-group-margin-bottom:    remCalc(15) !default;
+$form-label-margin-bottom:    remCalc(10) !default;
+$input-bg:                    $white !default;
+$input-color:                 $gray !default;
+$input-border:                1px solid #ccc !default;
+$input-border-focus:          $gray !default;
+$input-color-placeholder:     $gray-light !default;
+$input-padding:               remCalc(8) remCalc(12) !default;
+$input-height-base:           remCalc(42) !default;
+$input-radius:               $global-radius !default;
+$input-transition:            border-color 300ms ease-in-out !default;
+
 // Buttons
 // -------------------------
 
@@ -110,17 +126,6 @@ $btn-info-bg:                    $brand-info !default;
 $btn-info-border:                darken($btn-info-bg, 5%) !default;
 
 $btn-link-disabled-color:        $gray-light !default;
-
-
-// Forms
-// ------------------------
-
-$input-bg:                    $white !default;
-$input-color:                 $gray !default;
-$input-border:                #ccc !default;
-$input-border-focus:          $gray !default;
-$input-color-placeholder:     $gray-light !default;
-$input-height-base:           remCalc(42) !default;
 
 
 
