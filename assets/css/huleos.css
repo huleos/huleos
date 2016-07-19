@@ -831,4 +831,47 @@ textarea {
   .breadcrumbs > .active {
     color: #999999; }
 
+.navbar {
+  position: relative; }
+  .navbar:before, .navbar:after {
+    content: ' ';
+    display: table; }
+  .navbar:after {
+    clear: both; }
+
+.navbar-header {
+  text-align: center; }
+  .navbar-header .nav-brand {
+    padding: 0.8125rem 0.9375rem;
+    display: inline-block;
+    color: #222222; }
+    .navbar-header .nav-brand:hover {
+      text-decoration: none; }
+
+.navbar-nav ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none; }
+  .navbar-nav ul li {
+    display: inline-block; }
+    .navbar-nav ul li a {
+      display: inline-block;
+      padding: 0.3125rem 0.9375rem;
+      color: #999999;
+      text-decoration: none; }
+      .navbar-nav ul li a:hover {
+        color: #333333; }
+    .navbar-nav ul li.active > a {
+      color: #333333; }
+
+@media screen and (min-width: 40em) {
+  .navbar-header {
+    float: left; }
+    .navbar-header .nav-brand {
+      display: table-cell; }
+  .navbar-nav {
+    float: right; }
+    .navbar-nav ul li a {
+      padding: 0.8125rem 0.9375rem; } }
+
 /*# sourceMappingURL=huleos.css.map */
