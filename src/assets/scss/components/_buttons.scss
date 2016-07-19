@@ -2,6 +2,26 @@
 // Buttons
 // --------------------------------------------------
 
+$btn-bg: $brand-primary !default;
+$btn-bg-hover: scale-color($btn-bg, $lightness: -15%) !default;
+$btn-color: #fff !default;
+
+// Button style
+@mixin button-style(
+	$bg: $btn-bg,
+	$bg-hover: $btn-bg-hover,
+	$color: $btn-color
+) {
+	background-color: $bg;
+	color: $color;
+	// border-color: $btn-default-border;
+	&:hover,
+	&:focus{
+		background-color: $bg-hover;
+		color: $color;
+	}
+}
+
 .btn{
 	display: inline-block;
 	margin-bottom: 0; // For input.btn
@@ -40,16 +60,10 @@
 	color: $btn-default-color;
 	background-color: $btn-default-bg;
 	border-color: $btn-default-border;
-	&:hover{
+	&:hover,
+	&:focus{
 		background-color: $btn-default-color;
 		color: $white;
-		border-color: transparent;
-	}
-	&:active{
-		background-color: lighten($black, 28%);
-		&:focus{
-			outline: 0 none;
-		}
 	}
 }
 
@@ -71,18 +85,19 @@
 }
 
 .btn-primary {
-	color: $btn-primary-color;
-	background-color: $btn-primary-bg;
-	&:hover{
-		background-color: darken($btn-primary-bg, 12%);
-		color: $white;
-	}
-	&:active{
-		background-color: lighten($btn-primary-bg, 28%);
-		&:focus{
-			outline: 0 none;
-		}
-	}
+	// color: $btn-primary-color;
+	// background-color: $btn-primary-bg;
+	// &:hover{
+	// 	background-color: darken($btn-primary-bg, 12%);
+	// 	color: $white;
+	// }
+	// &:active{
+	// 	background-color: lighten($btn-primary-bg, 28%);
+	// 	&:focus{
+	// 		outline: 0 none;
+	// 	}
+	// }
+	@include button-style();
 }
 
 .btn-success {

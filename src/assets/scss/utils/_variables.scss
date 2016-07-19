@@ -93,8 +93,18 @@ $input-border-focus:          $gray !default;
 $input-color-placeholder:     $gray-light !default;
 $input-padding:               remCalc(8) remCalc(12) !default;
 $input-height-base:           remCalc(42) !default;
-$input-radius:               $global-radius !default;
+$input-radius:                $global-radius !default;
 $input-transition:            border-color 300ms ease-in-out !default;
+
+// 7. Navbar
+// -------------------------
+
+$nav-brand-color:              $gray-darker !default;
+$nav-brand-padding:            remCalc(13) remCalc(15) !default;
+$nav-link-padding:             remCalc(13) remCalc(15) !default;
+$nav-link-color:               $gray-light !default;
+$nav-link-color-hover:         $gray-dark !default;
+$nav-link-color-active:        $gray-dark !default;
 
 // Buttons
 // -------------------------

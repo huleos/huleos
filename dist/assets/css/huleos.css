@@ -732,14 +732,9 @@ textarea {
   color: #333333;
   background-color: transparent;
   border-color: #333333; }
-  .btn-default:hover {
+  .btn-default:hover, .btn-default:focus {
     background-color: #333333;
-    color: white;
-    border-color: transparent; }
-  .btn-default:active {
-    background-color: #474747; }
-    .btn-default:active:focus {
-      outline: 0 none; }
+    color: white; }
 
 .btn-default.inverse {
   color: white;
@@ -755,15 +750,11 @@ textarea {
       outline: 0 none; }
 
 .btn-primary {
-  color: #fff;
-  background-color: #428bca; }
-  .btn-primary:hover {
-    background-color: #2d6ca2;
-    color: white; }
-  .btn-primary:active {
-    background-color: #b2cfe9; }
-    .btn-primary:active:focus {
-      outline: 0 none; }
+  background-color: #428bca;
+  color: #fff; }
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #3277b2;
+    color: #fff; }
 
 .btn-success {
   color: #fff;
@@ -832,15 +823,24 @@ textarea {
     color: #999999; }
 
 .navbar {
-  position: relative; }
-  .navbar:before, .navbar:after {
-    content: ' ';
-    display: table; }
-  .navbar:after {
-    clear: both; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
 
 .navbar-header {
-  text-align: center; }
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .navbar-header .nav-brand {
     padding: 0.8125rem 0.9375rem;
     display: inline-block;
@@ -848,15 +848,27 @@ textarea {
     .navbar-header .nav-brand:hover {
       text-decoration: none; }
 
-.navbar-nav ul {
-  padding-left: 0;
-  margin: 0;
-  list-style: none; }
-  .navbar-nav ul li {
-    display: inline-block; }
+.navbar-nav {
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  .navbar-nav ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .navbar-nav ul li a {
       display: inline-block;
-      padding: 0.3125rem 0.9375rem;
+      padding: 0.8125rem 0.9375rem;
       color: #999999;
       text-decoration: none; }
       .navbar-nav ul li a:hover {
@@ -866,12 +878,19 @@ textarea {
 
 @media screen and (min-width: 40em) {
   .navbar-header {
-    float: left; }
-    .navbar-header .nav-brand {
-      display: table-cell; }
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
   .navbar-nav {
-    float: right; }
-    .navbar-nav ul li a {
-      padding: 0.8125rem 0.9375rem; } }
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2; }
+    .navbar-nav ul {
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; } }
 
 /*# sourceMappingURL=huleos.css.map */

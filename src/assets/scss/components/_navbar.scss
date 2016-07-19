@@ -3,16 +3,19 @@
 // --------------------------------------------------
 
 .navbar{
-	position: relative;
-	@include clearfix();
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .navbar-header{
-	text-align: center;
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
 	.nav-brand{
-		padding: remCalc(13) remCalc(15); // $nav-brand-padding
+		padding: $nav-brand-padding;
 		display: inline-block;
-		color: $gray-darker; // $nav-brand-color
+		color: $nav-brand-color;
 		&:hover{
 			text-decoration:none;
 		}
@@ -20,24 +23,30 @@
 }
 
 .navbar-nav{
+	flex: 0 0 100%;
+	max-width: 100%;
+	// display: flex;
+	// justify-content: flex-end;
 	ul{
 		padding-left: 0; 
 		margin: 0;
 		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		li{
-			display: inline-block;
 			a{
 				display: inline-block;
-				padding: remCalc(5) remCalc(15); // $nav-link-padding
-				color: $gray-light; // $nav-link-color
+				padding: $nav-link-padding;
+				color: $nav-link-color;
 				text-decoration: none;
 				&:hover{
-					color: $gray-dark; // $nav-link-color-hover
+					color: $nav-link-color-hover;
 				}
 			}
 			&.active{
 				> a{
-					color: $gray-dark; // $nav-link-color-active
+					color: $nav-link-color-active;
 				}
 			}
 		}
@@ -49,19 +58,13 @@
 
 @media #{$breakpoint-medium} {
 	.navbar-header{
-		float: left;
-		.nav-brand{
-			display: table-cell;
-		}
+		flex: 1;
+		justify-content: flex-start;
 	}
 	.navbar-nav{
-		float: right;
+		flex: 2;
 		ul{
-			li{
-				a{
-					padding: remCalc(13) remCalc(15);
-				}
-			}
+			justify-content: flex-end;
 		}
 	}
 }
