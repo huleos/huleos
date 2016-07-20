@@ -722,72 +722,47 @@ textarea {
   .btn:focus {
     outline: none; }
   .btn:hover, .btn:focus {
-    color: #333333;
     text-decoration: none; }
   .btn:active, .btn.active {
     outline: 0;
     background-image: none; }
 
-.btn-default {
-  color: #333333;
-  background-color: transparent;
-  border-color: #333333; }
-  .btn-default:hover, .btn-default:focus {
-    background-color: #333333;
-    color: white; }
-
-.btn-default.inverse {
-  color: white;
-  background-color: transparent;
-  border-color: white; }
-  .btn-default.inverse:hover {
-    background-color: white;
-    color: black;
-    border-color: transparent; }
-  .btn-default.inverse:active {
-    background-color: #474747; }
-    .btn-default.inverse:active:focus {
-      outline: 0 none; }
-
 .btn-primary {
-  background-color: #428bca;
-  color: #fff; }
+  color: #fff;
+  background-color: #428bca; }
   .btn-primary:hover, .btn-primary:focus {
-    background-color: #3277b2;
-    color: #fff; }
+    color: #fff;
+    background-color: #3277b2; }
 
 .btn-success {
   color: #fff;
   background-color: #5cb85c; }
-  .btn-success:hover {
-    background-color: #419641;
-    color: white; }
-  .btn-success:active {
-    background-color: #bfe3bf; }
-    .btn-success:active:focus {
-      outline: 0 none; }
+  .btn-success:hover, .btn-success:focus {
+    color: #fff;
+    background-color: #47a347; }
 
 .btn-alert {
   color: #fff;
   background-color: #f1391c; }
-  .btn-alert:hover {
-    background-color: #c4250c;
-    color: white; }
-  .btn-alert:active {
-    background-color: #f9aea3; }
-    .btn-alert:active:focus {
-      outline: 0 none; }
+  .btn-alert:hover, .btn-alert:focus {
+    color: #fff;
+    background-color: #d7290d; }
 
 .btn-info {
   color: #fff;
   background-color: #5bc0de; }
-  .btn-info:hover {
-    background-color: #2aabd2;
-    color: white; }
-  .btn-info:active {
-    background-color: #d2eef6; }
-    .btn-info:active:focus {
-      outline: 0 none; }
+  .btn-info:hover, .btn-info:focus {
+    color: #fff;
+    background-color: #34b1d6; }
+
+.btn-primary-outline {
+  color: #428bca;
+  background-color: transparent;
+  border-color: #428bca; }
+  .btn-primary-outline:hover, .btn-primary-outline:focus {
+    background-color: #428bca;
+    color: #fff;
+    border-color: #428bca; }
 
 .flex-video {
   position: relative;
