@@ -106,36 +106,25 @@ $nav-link-color:               $gray-light !default;
 $nav-link-color-hover:         $gray-dark !default;
 $nav-link-color-active:        $gray-dark !default;
 
-// Buttons
+// 8. Buttons
 // -------------------------
 
 $btn-font-weight:                normal !default;
-
-$btn-default-color:              $gray-dark !default;
-$btn-default-bg:                 transparent !default;
-$btn-default-border:             $gray-dark !default;
-
-$btn-default-inverse-color:              $white !default;
-$btn-default-inverse-bg:                 transparent !default;
-$btn-default-inverse-border:             $white !default;
+$btn-padding:                    remCalc(16) remCalc(32) !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
-$btn-success-border:             darken($btn-success-bg, 5%) !default;
 
 $btn-alert-color:                #fff !default;
 $btn-alert-bg:                   $brand-alert !default;
-$btn-alert-border:               darken($btn-alert-bg, 5%) !default;
 
 $btn-info-color:                 #fff !default;
 $btn-info-bg:                    $brand-info !default;
-$btn-info-border:                darken($btn-info-bg, 5%) !default;
 
-$btn-link-disabled-color:        $gray-light !default;
+$btn-primary-outline-bg:         $brand-primary !default;
 
 
 

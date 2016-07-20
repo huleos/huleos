@@ -2,26 +2,6 @@
 // Buttons
 // --------------------------------------------------
 
-$btn-bg: $brand-primary !default;
-$btn-bg-hover: scale-color($btn-bg, $lightness: -15%) !default;
-$btn-color: #fff !default;
-
-// Button style
-@mixin button-style(
-	$bg: $btn-bg,
-	$bg-hover: $btn-bg-hover,
-	$color: $btn-color
-) {
-	background-color: $bg;
-	color: $color;
-	// border-color: $btn-default-border;
-	&:hover,
-	&:focus{
-		background-color: $bg-hover;
-		color: $color;
-	}
-}
-
 .btn{
 	display: inline-block;
 	margin-bottom: 0; // For input.btn
@@ -34,7 +14,7 @@ $btn-color: #fff !default;
 	white-space: nowrap;
 	font-size: $base-font-size;
 	line-height: 1;
-	padding: remCalc(16) remCalc(32);
+	padding: $btn-padding;
 	user-select: none;
 	transition: background-color 300ms ease-out;
 
@@ -44,7 +24,6 @@ $btn-color: #fff !default;
 
 	&:hover,
 	&:focus{
-		color: $btn-default-color;
 		text-decoration: none;
 	}
 
@@ -56,91 +35,22 @@ $btn-color: #fff !default;
 }
 
 
-.btn-default {
-	color: $btn-default-color;
-	background-color: $btn-default-bg;
-	border-color: $btn-default-border;
-	&:hover,
-	&:focus{
-		background-color: $btn-default-color;
-		color: $white;
-	}
-}
-
-.btn-default.inverse {
-	color: $btn-default-inverse-color;
-	background-color: $btn-default-inverse-bg;
-	border-color: $btn-default-inverse-border;
-	&:hover{
-		background-color: $btn-default-inverse-color;
-		color: $black;
-		border-color: transparent;
-	}
-	&:active{
-		background-color: lighten($black, 28%);
-		&:focus{
-			outline: 0 none;
-		}
-	}
-}
-
 .btn-primary {
-	// color: $btn-primary-color;
-	// background-color: $btn-primary-bg;
-	// &:hover{
-	// 	background-color: darken($btn-primary-bg, 12%);
-	// 	color: $white;
-	// }
-	// &:active{
-	// 	background-color: lighten($btn-primary-bg, 28%);
-	// 	&:focus{
-	// 		outline: 0 none;
-	// 	}
-	// }
-	@include button-style();
+	@include button-style($btn-primary-color, $btn-primary-bg);
 }
 
 .btn-success {
-	color: $btn-success-color;
-	background-color: $btn-success-bg;
-	&:hover{
-		background-color: darken($btn-success-bg, 12%);
-		color: $white;
-	}
-	&:active{
-		background-color: lighten($btn-success-bg, 28%);
-		&:focus{
-			outline: 0 none;
-		}
-	}
+	@include button-style($btn-success-color, $btn-success-bg);
 }
 
 .btn-alert {
-	color: $btn-alert-color;
-	background-color: $btn-alert-bg;
-	&:hover{
-		background-color: darken($btn-alert-bg, 12%);
-		color: $white;
-	}
-	&:active{
-		background-color: lighten($btn-alert-bg, 28%);
-		&:focus{
-			outline: 0 none;
-		}
-	}
+	@include button-style($btn-alert-color, $btn-alert-bg);
 }
 
 .btn-info {
-	color: $btn-info-color;
-	background-color: $btn-info-bg;
-	&:hover{
-		background-color: darken($btn-info-bg, 12%);
-		color: $white;
-	}
-	&:active{
-		background-color: lighten($btn-info-bg, 28%);
-		&:focus{
-			outline: 0 none;
-		}
-	}
+	@include button-style($btn-info-color, $btn-info-bg);
+}
+
+.btn-primary-outline {
+	@include button-outline-style($btn-primary-outline-bg);
 }
