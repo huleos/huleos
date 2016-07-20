@@ -4,12 +4,13 @@
 
 .flex-video{
 	position: relative;
-	padding-top: remCalc(22);
-	padding-bottom: 67.5%;
+	padding-bottom: $flexvideo-padding-bottom;
 	height: 0;
-	margin-bottom: remCalc(14);
+	margin-bottom: $flexvideo-margin-bottom;
 	overflow: hidden;
-	&.widescreen{ padding-bottom: 56.25%;}
+	&.widescreen{ 
+		padding-bottom: $flexvideo-widescreen-padding-bottom;
+	}
 	iframe,
 	object,
 	embed,

@@ -51,25 +51,16 @@ samp {
 
 // Blocks of code
 pre {
-	display: block;
-	font-size: remCalc(13);
-	line-height: $base-line-height;
-  word-break: break-all;
-  word-wrap: break-word;
-  color: $pre-color;
-  margin: 0 0 remCalc(16);
-  background-color: $pre-bg;
-  border: 1px solid $pre-border-color;
-  padding: remCalc(8);
+  margin: 0 0 1rem;
   code{
-    font-size: inherit;
-    white-space: pre-wrap;
-    border-radius: 0;
+    display: block;
+    overflow-x: auto;
   }
 }
 
 code {
-    padding: $code-padding;
-    background-color: $code-background;
-    border: $code-border;
+  color: $code-color;
+  padding: $code-padding;
+  background-color: $code-background;
+  border: $code-border;
 }

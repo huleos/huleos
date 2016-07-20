@@ -10,21 +10,26 @@
 $body-font-size:     		100% !default;
 $base-line-height:   		1.5 !default;
 $base-font-weight:   		normal !default;
-$black:              		darken(#000, 100%) !default; // #000
-$gray-darker:       		lighten(#000, 13.5%) !default; // #222
-$gray-dark:         		lighten(#000, 20%) !default;   // #333
-$gray:              		lighten(#000, 33.5%) !default; // #555
-$gray-light:        		lighten(#000, 60%) !default;   // #999
-$gray-lighter:      		lighten(#000, 93.5%) !default; // #eee
-$white:             		lighten(#fff, 100%) !default; // #fff
-$brand-primary:     		#428bca !default;
-$brand-success:     		#5cb85c !default;
-$brand-alert:       		#f1391c !default;
-$brand-info:        		#5bc0de !default;
-$hr-border:         		$gray-lighter !default;
+
+// $gray-darker:       		lighten(#000, 13.5%) !default; // #222
+$gray-dark:         		#8a8a8a !default;
+$gray-medium:           #cacaca !default;
+$gray-light:        		#e6e6e6 !default;
+// $gray-lighter:      		lighten(#000, 93.5%) !default; // #eee
+//$gray-lightest:         #f7f7f9 !default;
+
+$black:              		#0a0a0a !default;
+$white:             		#fefefe !default;
+$brand-color:(
+	primary: #428bca,
+	success: #5cb85c,
+	alert:   #f1391c,
+	info:    #5bc0de,
+) !default;
+$hr-border:             $gray-light !default;
 $hr-margin:             remCalc(20) auto !default;
-$body-bg:           		#fff !default;
-$text-color:        		$gray-dark !default;
+$body-bg:               $white !default;
+$text-color:            $black !default;
 $global-radius:         0 !default;
 
 // 2. Typography
@@ -34,33 +39,31 @@ $font-sans-serif:               'Source Sans Pro', Helvetica, Arial, sans-serif 
 $font-serif:                    Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-monospace:                Consolas, "Liberation Mono", Courier, monospace !default;
 $paragraph-margin-bottom:       remCalc(12) !default;
-$link-color:                    $brand-primary !default;
+$link-color:                    map-get($brand-color, primary);
 $link-hover-color:              scale-color($link-color, $lightness: -14%) !default;
 $link-text-decoration:          none !default;
 $link-text-decoration-hover:    none !default;
 $header-font-family:            $font-serif !default;
 $header-font-weight:            normal !default;
 $header-margin-bottom:          remCalc(8) !default;
-$font-size-h1:                  remCalc(36) !default;
-$font-size-h2:                  remCalc(30) !default;
-$font-size-h3:                  remCalc(24) !default;
-$font-size-h4:                  remCalc(18) !default;
-$font-size-h5:                  $base-font-size !default;
-$font-size-h6:                  remCalc(12) !default;
-$pre-bg:                        lighten($gray, 62%) !default;
-$pre-color:                     $gray-dark !default;
-$pre-border-color:              $gray-light !default;
+$font-size-h1:                  remCalc(40) !default;
+$font-size-h2:                  remCalc(32) !default;
+$font-size-h3:                  remCalc(28) !default;
+$font-size-h4:                  remCalc(24) !default;
+$font-size-h5:                  remCalc(20) !default;
+$font-size-h6:                  remCalc(16) !default;
 $code-font-family:              $font-monospace !default;
+$code-color:                    $black !default;
 $code-padding:                  remCalc(2) remCalc(5) !default;
-$code-background:               #f8f8f8 !default;
-$code-border:                   1px solid $gray-lighter !default;
+$code-background:               scale-color($gray-light, $lightness: 45%) !default;
+$code-border:                   1px solid $gray-medium !default;
 
 // 3. Tables
 // -------------------------
 
 $table-cell-padding:                 remCalc(8) !default;
 $table-bg:                           transparent !default;
-$table-head-bg:                      $gray-lighter !default;
+$table-head-bg:                      $gray-light !default;
 $table-bg-hover:                     lighten($black, 97.5%) !default;;
 $table-border:                       1px solid #ddd !default;
 
@@ -69,7 +72,7 @@ $table-border:                       1px solid #ddd !default;
 $breadcrumb-padding:          remCalc(8) remCalc(15) !default;
 $breadcrumb-margin:           0 0 remCalc(20) 0 !default;
 $breadcrumb-color:            #ccc !default;
-$breadcrumb-active-color:     $gray-light !default;
+$breadcrumb-active-color:     $gray-dark !default;
 $breadcrumb-separator:        "/" !default;
 
 // 5. Grid
@@ -87,10 +90,10 @@ $breakpoint-large: "screen and (min-width: 64em)";
 $form-group-margin-bottom:    remCalc(15) !default;
 $form-label-margin-bottom:    remCalc(10) !default;
 $input-bg:                    $white !default;
-$input-color:                 $gray !default;
+$input-color:                 $black !default;
 $input-border:                1px solid #ccc !default;
-$input-border-focus:          $gray !default;
-$input-color-placeholder:     $gray-light !default;
+$input-border-focus:          $gray-dark !default;
+$input-color-placeholder:     $gray-dark !default;
 $input-padding:               remCalc(8) remCalc(12) !default;
 $input-height-base:           remCalc(42) !default;
 $input-radius:                $global-radius !default;
@@ -99,12 +102,12 @@ $input-transition:            border-color 300ms ease-in-out !default;
 // 7. Navbar
 // -------------------------
 
-$nav-brand-color:              $gray-darker !default;
+$nav-brand-color:              $black !default;
 $nav-brand-padding:            remCalc(13) remCalc(15) !default;
 $nav-link-padding:             remCalc(13) remCalc(15) !default;
-$nav-link-color:               $gray-light !default;
-$nav-link-color-hover:         $gray-dark !default;
-$nav-link-color-active:        $gray-dark !default;
+$nav-link-color:               $gray-dark !default;
+$nav-link-color-hover:         $black !default;
+$nav-link-color-active:        $black !default;
 
 // 8. Buttons
 // -------------------------
@@ -112,21 +115,24 @@ $nav-link-color-active:        $gray-dark !default;
 $btn-font-weight:                normal !default;
 $btn-padding:                    remCalc(16) remCalc(32) !default;
 
-$btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-color:              $white !default;
+$btn-primary-bg:                 map-get($brand-color, primary) !default;
 
-$btn-success-color:              #fff !default;
-$btn-success-bg:                 $brand-success !default;
+$btn-success-color:              $white !default;
+$btn-success-bg:                 map-get($brand-color, success) !default;
 
-$btn-alert-color:                #fff !default;
-$btn-alert-bg:                   $brand-alert !default;
+$btn-alert-color:                $white !default;
+$btn-alert-bg:                   map-get($brand-color, alert) !default;
 
-$btn-info-color:                 #fff !default;
-$btn-info-bg:                    $brand-info !default;
+$btn-info-color:                 $white !default;
+$btn-info-bg:                    map-get($brand-color, info) !default;
 
-$btn-primary-outline-bg:         $brand-primary !default;
+$btn-primary-outline-bg:         map-get($brand-color, primary) !default;
 
+// 9. Flex Video
+// -------------------------
 
-
-
+$flexvideo-margin-bottom: rem-calc(16) !default;
+$flexvideo-padding-bottom: 67.5% !default;
+$flexvideo-widescreen-padding-bottom: 56.25% !default;
 
