@@ -490,6 +490,8 @@ code {
       display: table; }
     .row .row:after {
       clear: both; }
+  .row.expanded {
+    max-width: none; }
 
 .col {
   position: relative;
@@ -611,7 +613,7 @@ table {
     background-color: #e6e6e6; }
     table > thead > tr > th {
       vertical-align: bottom;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #e6e6e6;
       text-align: left; }
   table th,
   table td {
@@ -619,13 +621,13 @@ table {
     line-height: 1.5;
     overflow: visible;
     vertical-align: top;
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #e6e6e6; }
   table td:last-child {
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #e6e6e6; }
 
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: white; }
+  background-color: #e6e6e6; }
 
 ::-webkit-input-placeholder {
   color: #8a8a8a; }
@@ -769,10 +771,9 @@ textarea {
 
 .flex-video {
   position: relative;
-  padding-top: 1.375rem;
   padding-bottom: 67.5%;
   height: 0;
-  margin-bottom: 0.875rem;
+  margin-bottom: rem-calc(16);
   overflow: hidden; }
   .flex-video.widescreen {
     padding-bottom: 56.25%; }

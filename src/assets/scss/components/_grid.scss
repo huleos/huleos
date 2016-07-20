@@ -13,6 +13,9 @@
     margin-right: -$grid-gutter;
     @include clearfix();
 	}
+	&.expanded{
+		max-width: none;
+	}
 }
 
 .col{

@@ -10,14 +10,9 @@
 $body-font-size:     		100% !default;
 $base-line-height:   		1.5 !default;
 $base-font-weight:   		normal !default;
-
-// $gray-darker:       		lighten(#000, 13.5%) !default; // #222
 $gray-dark:         		#8a8a8a !default;
 $gray-medium:           #cacaca !default;
 $gray-light:        		#e6e6e6 !default;
-// $gray-lighter:      		lighten(#000, 93.5%) !default; // #eee
-//$gray-lightest:         #f7f7f9 !default;
-
 $black:              		#0a0a0a !default;
 $white:             		#fefefe !default;
 $brand-color:(
@@ -64,8 +59,8 @@ $code-border:                   1px solid $gray-medium !default;
 $table-cell-padding:                 remCalc(8) !default;
 $table-bg:                           transparent !default;
 $table-head-bg:                      $gray-light !default;
-$table-bg-hover:                     lighten($black, 97.5%) !default;;
-$table-border:                       1px solid #ddd !default;
+$table-bg-hover:                     $gray-light !default;
+$table-border:                       1px solid $gray-light !default;
 
 // 4. Breadcrumbs
 // -------------------------
