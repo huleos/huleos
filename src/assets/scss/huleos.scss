@@ -10,7 +10,8 @@
 // Components
 @import "components/global";
 @import "components/type";
-@import "components/grid";
+@import "components/flex-grid";
+// @import "components/grid";
 @import "components/tables";
 @import "components/forms";
 @import "components/buttons";
@@ -18,6 +19,12 @@
 @import "components/breadcrumbs";
 @import "components/navbar";
 
+// @if $flex == true {
+// 	@import "components/flex-grid";
+// }
+// @else {
+// 	@import "components/grid";
+// }
 
 // Custom CSS
 @import "custom";
