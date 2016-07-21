@@ -77,29 +77,33 @@
 }
 
 // Vertical Align
-.align-right{
-	justify-content: flex-end;
-}
+$flex-justify: (
+  'left': flex-start,
+  'right': flex-end,
+  'center': center,
+  'justify': space-between,
+  'spaced': space-around,
+);
 
-.align-justify{
-	justify-content: space-between;
-}
-
-.align-spaced{
-	justify-content: space-around;
+@each $vdir, $prop in $flex-justify{
+  .align-#{$vdir}{
+    justify-content: #{$prop};
+  }
 }
 
 // Horizontal
-.align-top{
-	align-items: flex-start; 
-}
 
-.align-middle{
-	align-items: center; 
-}
+$flex-align: (
+  'top': flex-start,
+  'bottom': flex-end,
+  'middle': center,
+  'stretch': stretch,
+);
 
-.align-bottom{
-	align-items: flex-end; 
+@each $hdir, $prop in $flex-justify{
+  .align-#{$hdir}{
+    align-items: #{$prop};
+  }
 }
 
 

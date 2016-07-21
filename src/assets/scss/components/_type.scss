@@ -64,3 +64,9 @@ code {
   background-color: $code-background;
   border: $code-border;
 }
+
+@each $align in (left, right, center, justify) {
+  .text-#{$align}{
+    text-align: $align;
+  }
+}
