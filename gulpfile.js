@@ -18,14 +18,9 @@ const gulp            = require('gulp'),
 // Check for --production flag
 const PRODUCTION = gutil.env.production;
 
+// Javascript Paths
 const jsFiles = [
 	'src/assets/js/main.js'
-];
-
-const watchFiles = [
-  'dist/*.html',
-  'dist/assets/css/*.css',
-  'dist/assets/js/*.js'
 ];
 
 // Copy page templates into finished HTML files
