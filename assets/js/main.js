@@ -1,1 +1,4 @@
-!function(){console.log("Ready buddies!")}();
+(function() {
+	console.log('Ready buddies!');
+})();
+//# sourceMappingURL=main.js.map
