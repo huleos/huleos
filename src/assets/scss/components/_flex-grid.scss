@@ -100,7 +100,7 @@ $flex-align: (
   'stretch': stretch,
 );
 
-@each $hdir, $prop in $flex-justify{
+@each $hdir, $prop in $flex-align{
   .align-#{$hdir}{
     align-items: #{$prop};
   }
