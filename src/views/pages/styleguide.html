@@ -1,11 +1,11 @@
+{{#markdown}}
 <h2 id="flex-grid">Flex Grid</h2>
-<div class="highlight html">
-<pre>
-&lt;div class="row"&gt;
-  &lt;div class="sm-6 col"&gt;&lt;/div&gt;
-  &lt;div class="sm-6 col"&gt;&lt;/div&gt;
-&lt;/div&gt;</pre>
+```html
+<div class="row">
+  <div class="sm-6 col"></div>
 </div>
+```
+{{/markdown}}
 
 <style>
 /*
@@ -157,23 +157,13 @@
 .scss .hljs-class {
   color: #795da3;
 }
-
-
-/* custom */
-.highlight {
-    overflow-x: auto;
-    position: relative;
-    padding: 0.8rem;
-    line-height: 1.4;
-    border-radius: 2px;
-}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
 
 <script>
 $(document).ready(function() {
-  $('.highlight').each(function(i, block) {
+  $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
   });
 });
