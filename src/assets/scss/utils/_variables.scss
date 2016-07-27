@@ -97,6 +97,7 @@ $input-transition:            border-color 300ms ease-in-out !default;
 // 7. Navbar
 // -------------------------
 
+$nav-padding:                  0 remCalc(16) !default;
 $nav-brand-color:              $black !default;
 $nav-brand-padding:            remCalc(13) remCalc(15) !default;
 $nav-link-padding:             remCalc(13) remCalc(15) !default;
