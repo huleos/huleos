@@ -5,7 +5,6 @@
 .navbar{
 	display: flex;
 	flex-flow: row wrap;
-	padding: $nav-padding;
 }
 
 .navbar-header{
@@ -56,16 +55,24 @@
 
 
 // Medium
-
 @media #{$breakpoint-medium} {
+	
 	.navbar-header{
-		flex: 1;
+		flex: 0 0 auto;
 		justify-content: flex-start;
 	}
 	.navbar-nav{
-		flex: 2;
+		flex: 1 1 0px;
 		ul{
 			justify-content: flex-end;
 		}
+	}
+
+}
+
+// Large
+@media #{$breakpoint-large} {
+	.navbar{
+		padding: $nav-padding;	
 	}
 }
