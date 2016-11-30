@@ -476,6 +476,24 @@ code {
   background-color: #f1f1f1;
   border: 1px solid #cacaca; }
 
+cite {
+  display: block;
+  font-size: 0.875rem;
+  color: #8a8a8a; }
+  cite:before {
+    content: '\2014 \0020'; }
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.25rem; }
+
+ol {
+  margin-left: 1.25rem; }
+
+.no-bullet {
+  margin-left: 0;
+  list-style: none; }
+
 .text-left {
   text-align: left; }
 
