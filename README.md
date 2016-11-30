@@ -23,17 +23,17 @@ git clone git@github.com:huleos/huleos.git projectname
 Open folder in your command line, and install dependencies:
 ```
 cd projectname
-npm install
+npm install or yarn install
 ```
 
 Run:
 ```
-npm start
+npm start or yarn install
 ```
 Default task server, you can view it at: `http://localhost:3000`
 
 
-To create compressed, production-ready assets, run `npm run build`.
+To create compressed, production-ready assets, run `npm run build or yarn build`.
 
 ####Author
 Huleos Framework is a project by [Julio Cesar Montenegro](http://huleos.com)
