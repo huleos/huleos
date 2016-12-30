@@ -1,6 +1,6 @@
 {
   "name": "huleos",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Huleos is a small “mobile first” CSS framework was made by Julio Cesar Montenegro web designer and front-end",
   "main": "gulpfile.js",
   "scripts": {

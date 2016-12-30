@@ -2,14 +2,14 @@
 // Flexible videos embeds!
 // --------------------------------------------------
 
-.flex-video{
+.embed{
 	position: relative;
-	padding-bottom: $flexvideo-padding-bottom;
+	padding-bottom: $embed-padding-bottom;
 	height: 0;
-	margin-bottom: $flexvideo-margin-bottom;
+	margin-bottom: $embed-margin-bottom;
 	overflow: hidden;
 	&.widescreen{ 
-		padding-bottom: $flexvideo-widescreen-padding-bottom;
+		padding-bottom: $embed-widescreen-padding-bottom;
 	}
 	iframe,
 	object,

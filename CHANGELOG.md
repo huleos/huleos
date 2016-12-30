@@ -1,3 +1,6 @@
+# 0.3.0 (Dec 29, 2016)
+- Upgrade normalize
+
 # 0.2.0 (Jul 21, 2016)
 - Added gulp
 - New structure

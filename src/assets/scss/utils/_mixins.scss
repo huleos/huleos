@@ -15,7 +15,11 @@
 }
 
 // Columns Center
-@mixin col-center{ margin-left: auto; margin-right: auto; float: none;}
+@mixin col-center{
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
 
 // Button style
 @mixin button-style($color, $background) {
